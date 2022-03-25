@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudentAPP">
         <activity
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
+            android:name=".FirstPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

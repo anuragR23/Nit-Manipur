@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enroll Number"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Enroll_Number"
+                android:hint="Enter Enroll Number">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            </EditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp">
+
+            </TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Password"
+                android:hint="Enter your Password"
+                >
+
+            </EditText>
+            <CheckBox
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Show_Password"
+                android:text="Show Password">
+
+            </CheckBox>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/Login"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Log In"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#FFFF"
+                android:background="@android:color/black"
+                >
+
+            </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
